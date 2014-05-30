@@ -32,7 +32,7 @@ function run(transport) {
 
     var options = {
       onStart: function () {
-	console.log("Testing SocketIO v1.0.0-pre2 using " + process.argv[2] + "...");
+	console.log("Testing SocketIO v1.0.0-pre2 using " + transport + "...");
       },
       onComplete: function () {
 	console.log("Mean time for JSON message from server to client back to server: " + this.stats.mean + "\n" +
